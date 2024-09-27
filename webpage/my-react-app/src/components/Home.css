@@ -1,0 +1,95 @@
+/* 연구실 멤버 이미지를 크게 중앙에 배치 */
+.lab-members {
+  display: flex;
+  justify-content: center;  /* 중앙에 배치 */
+  align-items: center;
+  margin-top: 40px;
+}
+
+.large-image {
+  width: 80%;  /* 이미지 너비를 화면의 80%로 설정 */
+  max-width: 1600px;  /* 최대 너비 설정 */
+  height: auto;
+  border-radius: 0;  /* 네모 모양으로 설정 */
+  object-fit: cover;  /* 이미지 비율을 유지하면서 크기에 맞추기 */
+}
+
+/* 연구와 관련된 이미지 슬라이더 */
+.research-slider {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.circle-image {
+  width: 80%;  /* 연구 이미지를 멤버 사진 크기만큼 크게 */
+  max-width: 1600px;  /* 최대 너비 설정 */
+  border-radius: 0;  /* 네모 모양으로 변경 */
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.circle-image:hover {
+  transform: scale(1.05); /* 마우스 호버 시 이미지 확대 */
+}
+
+.slider-controls {
+  margin-top: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* 뉴스 섹션 */
+.news {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: white; /* 배경을 흰색으로 설정 */
+  border-radius: 10px; /* 모서리를 둥글게 설정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+  }
+
+
+.news h2 {
+  margin-bottom: 15px;
+}
+
+
+/* 최근 Publication */
+.publications {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.publications ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.publications li {
+  margin-bottom: 10px;
+}
+
+.publications button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

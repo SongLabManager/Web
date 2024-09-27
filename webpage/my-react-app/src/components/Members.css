@@ -1,0 +1,78 @@
+/* 멤버 리스트를 가로로 나열하여 한 행에 3명씩 배치 */
+.member-container {
+  display: flex;
+  flex-wrap: wrap;  /* 화면 크기에 따라 줄바꿈 */
+  justify-content: space-between;  /* 멤버 사이의 간격을 균등하게 배치 */
+  gap: 20px;  /* 구성원들 사이 간격 */
+  margin-top: 20px;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* 사진과 텍스트를 중앙 정렬 */
+  width: calc(33.33% - 20px);  /* 한 행에 3명씩 배치 (여백을 고려하여 크기 조정) */
+  margin-bottom: 20px;
+}
+
+.member img {
+  width: 150px;  /* 이미지 크기 조정 */
+  height: 150px;
+  border-radius: 0 !important;  /* 둥근 모서리를 없애 네모로 변경, !important로 우선 순위 설정 */
+  object-fit: cover;  /* 이미지 비율 유지하며 크기에 맞게 자르기 */
+  margin-bottom: 10px;  /* 이미지와 텍스트 사이 간격 */
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;  /* 이름과 이메일을 세로로 나열 */
+  text-align: center;
+}
+
+.member-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.member-info p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+}
+
+/* Full-Time Members 스타일 */
+.full-time {
+  margin-bottom: 40px;
+}
+.FullTime {
+  background-color: white; /* 배경을 흰색으로 설정 */
+  padding: 5px; /* 내부 여백 추가 */
+  border-radius: 10px; /* 모서리를 둥글게 설정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+}
+
+/* Part-Time Members 스타일 */
+.part-time {
+  margin-bottom: 40px;
+}
+
+.PartTime {
+  background-color: white; /* 배경을 흰색으로 설정 */
+  padding: 5px; /* 내부 여백 추가 */
+  border-radius: 10px; /* 모서리를 둥글게 설정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+}
+
+/* Alumni 스타일 */
+.alumni {
+  margin-bottom: 40px;
+}
+.Alumni {
+  background-color: white; /* 배경을 흰색으로 설정 */
+  padding: 5px; /* 내부 여백 추가 */
+  border-radius: 10px; /* 모서리를 둥글게 설정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+}
+/* 제목에 좌측 여백 추가 */
+h2 {
+  margin-left: 20px;  /* Full-Time, Part-Time, Alumni 섹션의 좌측 여백 */
+}
