@@ -1,0 +1,104 @@
+/* src/components/Publication.css */
+
+.publication-container {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background-color: #f4f4f4;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.add-paper-form {
+  margin-top: 30px;
+}
+
+.add-paper-form input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 250px;
+}
+
+.add-paper-form select {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.international {
+  background-color: white; /* 배경을 흰색으로 설정 */
+  padding: 5px; /* 내부 여백 추가 */
+  border-radius: 10px; /* 모서리를 둥글게 설정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+}
+.international h2 {
+  color: black; /* 제목 색상을 검은색으로 설정 */
+  margin-bottom: 5px;
+}
+
+.international ul {
+  list-style-type: disc; /* 리스트 아이템에 불릿 추가 */
+  padding-left: 20px; /* 리스트 항목의 들여쓰기 */
+}
+
+.international ul li {
+  margin-bottom: 8px; /* 리스트 항목 사이의 간격 */
+  color: black; /* 리스트 항목 텍스트 색상 */
+  background-color:white;
+}
+
+.domestic {
+  background-color: white; /* 배경을 흰색으로 설정 */
+  padding: 5px; /* 내부 여백 추가 */
+  border-radius: 10px; /* 모서리를 둥글게 설정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+}
+
+.domestic h2 {
+  color: black; /* 제목 색상을 검은색으로 설정 */
+  margin-bottom: 5px;
+}
+
+.domestic ul {
+  list-style-type: disc; /* 리스트 아이템에 불릿 추가 */
+  padding-left: 20px; /* 리스트 항목의 들여쓰기 */
+}
+
+.domestic ul li {
+  margin-bottom: 8px; /* 리스트 항목 사이의 간격 */
+  color: black; /* 리스트 항목 텍스트 색상 */
+  background-color:white;
+}
