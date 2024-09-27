@@ -1,0 +1,126 @@
+.professor-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.professor-photo {
+  flex: 0 0 250px;  /* 이미지 영역 너비 고정 */
+  margin-right: 30px;
+  margin-top :90px;
+}
+
+.professor-photo img {
+  width: 100%;  /* 이미지가 컨테이너 너비에 맞게 */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.professor-info {
+  flex: 1;  /* 나머지 공간 차지 */
+}
+
+.Education {
+  background-color: white; /* 배경을 흰색으로 설정 */
+  padding: 5px; /* 내부 여백 추가 */
+  border-radius: 10px; /* 모서리를 둥글게 설정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+}
+
+.Education h2 {
+  color: black; /* 제목 색상을 검은색으로 설정 */
+  margin-bottom: 5px;
+}
+
+.Education ul {
+  list-style-type: disc; /* 리스트 아이템에 불릿 추가 */
+  padding-left: 20px; /* 리스트 항목의 들여쓰기 */
+}
+
+.Education ul li {
+  margin-bottom: 8px; /* 리스트 항목 사이의 간격 */
+  color: black; /* 리스트 항목 텍스트 색상 */
+  background-color:white;
+}
+
+.Career {
+  background-color: white; /* 배경을 흰색으로 설정 */
+  padding: 5px; /* 내부 여백 추가 */
+  border-radius: 10px; /* 모서리를 둥글게 설정 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */
+}
+
+.Career h2 {
+  color: black; /* 제목 색상을 검은색으로 설정 */
+  margin-bottom: 5px;
+}
+
+.Career ul {
+  list-style-type: disc; /* 리스트 아이템에 불릿 추가 */
+  padding-left: 20px; /* 리스트 항목의 들여쓰기 */
+}
+
+.Career ul li {
+  margin-bottom: 8px; /* 리스트 항목 사이의 간격 */
+  color: black; /* 리스트 항목 텍스트 색상 */
+  background-color:white;
+}
+
+.toggle-btn {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 18px;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.professor-info h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+  text-align: left; /* 글씨를 좌측 정렬 */
+}
+
+.professor-info h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.professor-info ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 0.5;
+}
+
+.professor-info ul li {
+  margin-bottom: 3px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* 스크롤될 때 나타나는 섹션 */
+.scroll-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.scroll-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
